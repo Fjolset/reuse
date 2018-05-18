@@ -170,6 +170,8 @@
         width: 80;
         height: 200px;
         
+        margin-bottom: 10%;
+        
         text-align: center;
         
         background-color: cornflowerblue;
@@ -184,6 +186,66 @@
     {
         width: 80%;
         height: 200px;
+    }
+    
+    /*------------------------MOBILINFO------------*/
+    
+    .mobil-section
+    {
+        text-align: center;  
+        
+        width: 100%;
+    }
+    
+    .mobil-wrapper
+    {
+        height: 300px;
+        
+        background-color: darkgray;
+        
+        display: flex;
+        
+        flex-wrap: wrap;
+        
+        
+    }
+    
+    .mobil-info
+    {
+        width: 40%;
+        height: 100px;
+        
+        background-color: chartreuse;
+    }
+    
+    .mobil-info1
+    {
+        order: 1;
+        
+        margin-left: 7%;
+        
+    }
+    
+    .mobil-info2
+    {
+        order: 2;
+        
+        margin-left: 5%;
+    }
+    
+    .mobil-info3
+    {
+        order: 3;
+        
+        margin-left: 7%;
+        
+    }
+    
+    .mobil-info4
+    {
+        order: 4;
+        
+        margin-left: 5%;
     }
     
 }
