@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
 /*MOBIL*/
 
 @media(max-width: 767px) {
@@ -37,7 +43,7 @@
     .up-ikon {
         position: absolute;
         top: 15px;
-        left: 40%;
+        left: 43%;
         width: 15%;
         height: 70px;
     }
@@ -46,14 +52,170 @@
         margin-bottom: 20%;
 
     }
-
-    .navbar {
+    /*---------------- Navbar -------------*/
+    /*---------------- https://codepen.io/sergioandrade/pen/onkub -------------*/
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+    .open {
         position: absolute;
+        z-index: 5;
         top: 5px;
-        right: 15px;
-        width: 15%;
-        height: 40px;
-        background-color: darkgreen;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        display: block;
+        cursor: pointer;
+        transition: opacity 0.2s linear;
+    }
+    .open span {
+        display: block;
+        float: left;
+        clear: both;
+        height: 4px;
+        width: 40px;
+        border-radius: 40px;
+        background-color: #000;
+        position: absolute;
+        right: 3px;
+        top: 3px;
+        overflow: hidden;
+        transition: all 0.4s ease;
+    }
+    .open span:nth-child(1) {
+        margin-top: 10px;
+        z-index: 9;
+    }
+    .open span:nth-child(2) {
+        margin-top: 20px;
+    }
+    .open span:nth-child(3) {
+        margin-top: 30px;
+    }
+
+    
+    .sub-menu li {
+        display: block;
+        float: right;
+        clear: both;
+        height: auto;
+        margin-right: -160px;
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .sub-menu li:first-child {
+        margin-top: 180px;
+    }
+    .sub-menu li:nth-child(1) {
+        -webkit-transition-delay: 0.05s;
+    }
+    .sub-menu li:nth-child(2) {
+        -webkit-transition-delay: 0.10s;
+    }
+    .sub-menu li:nth-child(3) {
+        -webkit-transition-delay: 0.15s;
+    }
+    .sub-menu li:nth-child(4) {
+        -webkit-transition-delay: 0.20s;
+    }
+    .sub-menu li:nth-child(5) {
+        -webkit-transition-delay: 0.25s;
+    }
+    .sub-menu li a {
+        color: #fff;
+        font-family: 'Lato', Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        width: 100%;
+        display: block;
+        float: left;
+        line-height: 40px;
+    }
+
+    .oppenned .sub-menu {
+        opacity: 1;
+        height: 400px;
+        width: 400px;
+    }
+    .oppenned span:nth-child(2) {
+        overflow: visible;
+    }
+    .oppenned span:nth-child(1),
+    .oppenned span:nth-child(3) {
+        z-index: 100;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .oppenned span:nth-child(1) {
+        -webkit-transform: rotate(45deg) translateY(12px) translateX(17px);
+        transform: rotate(45deg) translateY(12px) translateX(4px);
+    }
+    .oppenned span:nth-child(2) {
+        height: 450px;
+        width: 430px;
+        right: -160px;
+        top: -160px;
+        border-radius: 50%;
+        background-color: rgba(0,117,127, 0.95);
+    }
+    .oppenned span:nth-child(3) {
+        -webkit-transform: rotate(-45deg) translateY(-10px) translateX(10px);
+        transform: rotate(-45deg) translateY(-10px) translateX(3px);
+    }
+    .oppenned li {
+        margin-right: 168px;
+    }
+
+    .button {
+        display: block;
+        float: left;
+        clear: both;
+        padding: 20px 40px;
+        background: #fff;
+        border-radius: 3px;
+        border: 2px solid #00747e;
+        overflow: hidden;
+        position: relative;
+    }
+    .button:after {
+        transition: -webkit-transform 0.3s ease;
+        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+        content: "";
+        position: absolute;
+        height: 200px;
+        width: 400px;
+        -webkit-transform: rotate(45deg) translateX(-540px) translateY(-100px);
+        transform: rotate(45deg) translateX(-540px) translateY(-100px);
+        background: #00747e;
+        z-index: 1;
+    }
+    .button:before {
+        transition: -webkit-transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        content: attr(title);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        z-index: 2;
+        text-align: center;
+        padding: 20px 40px;
+        -webkit-transform: translateY(200px);
+        transform: translateY(200px);
+    }
+    .button:hover {
+        text-decoration: none;
+    }
+    .button:hover:after {
+        -webkit-transform: translateX(-300px) translateY(-100px);
+        transform: translateX(-300px) translateY(-100px);
+    }
+    .button:hover:before {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
     /*---------------- Section 1 ----------------*/
     section {
@@ -63,14 +225,14 @@
 
 
     .orp-tekst {
-        
+
         width: 80%;
         height: auto;
         margin-left: 10%;
         margin-bottom: 2%;
     }
     .orp-billede {
-        
+
         width: 80%;
         height: auto;
         margin-left: 10%;
@@ -79,7 +241,7 @@
     }
     /*---------------- Section 2 ----------------*/
     .orp-knaptekst {
-        
+
         width: 80%;
         height: auto;
         margin-left: 10%;
@@ -102,12 +264,12 @@
         height: 260px;
     }
     /*----------------  Footer ----------------*/
-    .footer{
+    .footer {
         position: absolute;
         width: 100%;
         z-index: 2;
     }
-    
+
     .footer-img {
         width: 100%;
     }
