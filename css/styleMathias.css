@@ -11,6 +11,7 @@
         width: 100%;
         height: auto;
     }
+    /*---------------Header----------------------*/
     header {
         width: 100%;
         overflow: hidden;
@@ -55,7 +56,7 @@
         height: 40px;
         background-color: darkgreen;
     }
-    
+    /*---------------- Section 1 ----------------*/
     section{
         width: 100%;
         text-align: center;
@@ -72,11 +73,12 @@
     .orp-billede {
         background-color:aquamarine;
         width: 80%;
-        height: 150px;
+        height: auto;
         margin-left: 10%;
         margin-bottom: 2%;
         overflow: hidden;
     }  
+    /*---------------- Section 2 ----------------*/
     .orp-knaptekst {
         background-color: yellow;
         width: 80%;
@@ -92,9 +94,15 @@
         margin-left: 10%;
         margin-bottom: 2%;
     }
-
-
-
+    /*---------------- Åbningstider ----------------*/
+    
+    
+    /*----------------  Map ----------------*/
+    .orp-map{
+        width: 100%;
+        height: 100px;
+           position: absolute;
+    }
 
 
 
