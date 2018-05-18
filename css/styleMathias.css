@@ -7,9 +7,10 @@
 @media(max-width: 767px) {
     body {
         margin: 0%;
+        padding: 0%;
         overflow-x: hidden;
         width: 100%;
-        height: auto;
+        height: 100%;
     }
     /*---------------Header----------------------*/
     header {
@@ -25,7 +26,6 @@
         left: 0;
         width: 20%;
         height: 70px;
-        background-color: brown;
     }
     .up-headerBillede {
         width: 150%;
@@ -38,9 +38,8 @@
         position: absolute;
         top: 15px;
         left: 40%;
-        width: 20%;
+        width: 15%;
         height: 70px;
-        background-color: red;
     }
     .up-h1 {
         margin-top: -25%;
@@ -57,54 +56,61 @@
         background-color: darkgreen;
     }
     /*---------------- Section 1 ----------------*/
-    section{
+    section {
         width: 100%;
         text-align: center;
     }
-    
+
 
     .orp-tekst {
-        background-color: aqua;
+        
         width: 80%;
         height: auto;
         margin-left: 10%;
         margin-bottom: 2%;
     }
     .orp-billede {
-        background-color:aquamarine;
+        
         width: 80%;
         height: auto;
         margin-left: 10%;
         margin-bottom: 2%;
         overflow: hidden;
-    }  
+    }
     /*---------------- Section 2 ----------------*/
     .orp-knaptekst {
-        background-color: yellow;
+        
         width: 80%;
         height: auto;
         margin-left: 10%;
         margin-bottom: 2%;
     }
     .orp-knap {
-        background-color:darkblue;
+        background-color: darkblue;
         width: 80%;
+        font-size: 36px;
+        color: white;
         border-radius: 25%;
         height: 50px;
         margin-left: 10%;
         margin-bottom: 2%;
     }
     /*---------------- Åbningstider ----------------*/
-    
-    
     /*----------------  Map ----------------*/
-    .orp-map{
+    .orp-map {
         width: 100%;
-        height: 100px;
-           position: absolute;
+        height: 260px;
     }
-
-
+    /*----------------  Footer ----------------*/
+    .footer{
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    .footer-img {
+        width: 100%;
+    }
 
 
 
