@@ -1,31 +1,119 @@
-*
-{
+* {
     box-sizing: border-box;
 }
 
 /*MOBIL*/
-@media(max-width: 767px)
-{
-    body
-    {
-        
-    }   
+
+@media(max-width: 767px) {
+    body {
+        margin: 0%;
+        overflow-x: hidden;
+        width: 100%;
+        height: auto;
+    }
+    header {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+
+    }
+    .up-logo {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 70px;
+        background-color: brown;
+    }
+    .up-headerBillede {
+        width: 150%;
+        height: auto;
+        z-index: 1;
+        margin-left: -40%;
+
+    }
+    .up-ikon {
+        position: absolute;
+        top: 15px;
+        left: 40%;
+        width: 20%;
+        height: 70px;
+        background-color: red;
+    }
+    .up-h1 {
+        margin-top: -25%;
+        margin-bottom: 20%;
+
+    }
+
+    .navbar {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        width: 15%;
+        height: 40px;
+        background-color: darkgreen;
+    }
+    
+    section{
+        width: 100%;
+        text-align: center;
+    }
+    
+
+    .orp-tekst {
+        background-color: aqua;
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+        margin-bottom: 2%;
+    }
+    .orp-billede {
+        background-color:aquamarine;
+        width: 80%;
+        height: 150px;
+        margin-left: 10%;
+        margin-bottom: 2%;
+        overflow: hidden;
+    }  
+    .orp-knaptekst {
+        background-color: yellow;
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+        margin-bottom: 2%;
+    }
+    .orp-knap {
+        background-color:darkblue;
+        width: 80%;
+        border-radius: 25%;
+        height: 50px;
+        margin-left: 10%;
+        margin-bottom: 2%;
+    }
+
+
+
+
+
+
+
+
 }
 
 /*TABLET*/
-@media (min-width: 768px) and (max-width: 1023px)
-{
-    body
-    {
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
         background-color: darkorange;
-    }  
+    }
 }
-    
+
 /*NORMAL DESKTOP*/
-@media (min-width: 1024px)
-{
-    body
-    {
+
+@media (min-width: 1024px) {
+    body {
         background-color: crimson;
-    }  
+    }
 }
