@@ -50,6 +50,7 @@
     .up-h1 {
         margin-top: -25%;
         margin-bottom: 20%;
+        color: white;
 
     }
     /*---------------- Navbar -------------*/
@@ -217,7 +218,7 @@
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
-    /*---------------- Section 1 ----------------*/
+    /*---------------- ORP Section 1 ----------------*/
     section {
         width: 100%;
         text-align: center;
@@ -239,7 +240,7 @@
         margin-bottom: 2%;
         overflow: hidden;
     }
-    /*---------------- Section 2 ----------------*/
+    /*---------------- ORP Section 2 ----------------*/
     .orp-knaptekst {
 
         width: 80%;
@@ -273,7 +274,65 @@
     .footer-img {
         width: 100%;
     }
+    
+    /*------------ SP section 1 -------*/
+    section {
+        width: 100%;
+        text-align: center;
+    }
 
+
+    .sp-tekst {
+
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+        margin-bottom: 2%;
+    }
+    .sp-billede {
+
+        width: 80%;
+        display: 
+        height: auto;
+        margin-left: 10%;
+        margin-bottom: 2%;
+        overflow: hidden;
+    }
+    .sp-knap {
+        background-color: darkblue;
+        padding-top: 15px;
+        float: left;
+        width: 40%;
+        font-size: 24px;
+        color: white;
+        border-radius: 25%;
+        height: 50px;
+        margin-left: 7%;
+        margin-bottom: 2%;
+    }
+    /*------------ AP section 1 -------*/
+    section {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .ap-tekst {
+
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+        margin-bottom: 2%;
+    }
+    .ap-billede {
+
+        width: 80%;
+        display: 
+        height: auto;
+        margin-left: 10%;
+        margin-bottom: 2%;
+        overflow: hidden;
+    }
 
 
 }
