@@ -194,6 +194,8 @@
         text-align: center;  
         
         width: 100%;
+        
+        margin-bottom: 5%;
     }
     
     .mobil-wrapper
@@ -304,16 +306,23 @@
     
     .fp-footer-section
     {
-        margin-top: 10%;
         
         width: 100%;
         height: auto;
         
-        background-color: darkslategray;
+        background-color: #00747e;
+    }
+    
+    .fp-footer-billede
+    {
+        width: 100%;
+        
+        height: auto;
     }
     
     .fp-footer-wrapper
     {
+        margin-top: -2%;
   
     }
     
@@ -321,7 +330,7 @@
     
     .footer-tid
     {
-        padding-top: 5%;
+
         
         display: flex;
         justify-content: center;
