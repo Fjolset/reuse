@@ -336,6 +336,8 @@
         order: 1;
         
         width: 10%;
+        
+        margin-left: -10px;
     }
     
     .footer-tekst1
