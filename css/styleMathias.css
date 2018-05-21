@@ -136,7 +136,7 @@
     .oppenned .sub-menu {
         opacity: 1;
         height: 400px;
-        width: 400px;
+        width: 100px;
     }
     .oppenned span:nth-child(2) {
         overflow: visible;
