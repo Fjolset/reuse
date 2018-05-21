@@ -278,10 +278,7 @@
     }
     
     .mobil-wrapper
-    {        
-        position: absolute;
-        z-index: 3;
-        margin-top: -50%;
+    {
         height: 230px;
         
         display: flex;
