@@ -333,7 +333,41 @@
         margin-bottom: 2%;
         overflow: hidden;
     }
+ /*------------ FVP section 1 -------*/
+    section {
+        width: 100%;
+        text-align: center;
+    }
 
+
+    .fvp-tekst {
+
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+        margin-bottom: 2%;
+    }
+    .fvp-billede {
+
+        width: 80%;
+        display: 
+        height: auto;
+        margin-left: 10%;
+        margin-bottom: 2%;
+        overflow: hidden;
+    }
+    .fvp-knap {
+        background-color: darkblue;
+        padding-top: 15px;
+        float: left;
+        width: 40%;
+        font-size: 24px;
+        color: white;
+        border-radius: 25%;
+        height: 50px;
+        margin-left: 7%;
+        margin-bottom: 2%;
+    }
 
 }
 
