@@ -103,7 +103,6 @@
         float: right;
         clear: both;
         height: auto;
-        margin-right: -160px;
         transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
     .sub-menu li:first-child {
@@ -264,6 +263,7 @@
     /*---------------- Åbningstider ----------------*/
     /*----------------  Map ----------------*/
     .orp-map {
+        width: 100%;
         height: 260px;
         
         margin-bottom: 15%;
