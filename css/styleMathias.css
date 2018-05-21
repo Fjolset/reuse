@@ -154,10 +154,11 @@
     }
     .oppenned span:nth-child(2) {
         height: 450px;
-        width: 380px;
-        right: -160px;
+        width: 270px;
+        right: -20px;
         top: -160px;
-        border-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 0%;
         background-color: rgba(0,117,127, 0.95);
     }
     .oppenned span:nth-child(3) {
