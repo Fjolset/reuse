@@ -4,7 +4,8 @@
 }
 
 /*MOBIL*/
-
+@media(max-width: 767px)
+{
     body
     {
         margin: 0%;
@@ -441,6 +442,66 @@
         
         text-align: center;
     }
+    
+/* ----------------------------------EVENT---------------------------*/
+    
+    .ep-nextEvent
+    {
+        width: 100%;
+        
+        height: 200px;
+        
+        background-color: darkorange;
+    }
+    
+    .ep-textFelt
+    {
+    }
+    
+    .ep-tekst
+    {
+    }
+    
+/* GALLERI */
+    
+    
+    .ep-galleri
+    { 
+        width: 100%;
+        
+        height: auto;
+        margin-bottom: 5%;
+        
+        background-color: firebrick;
+    }
+    
+    .ep-wrapper
+    {
+        width: 100%;
+        
+        display: flex;
+        
+        flex-wrap: wrap;
+    }
+    
+    .ep-ikon
+    {
+        width: 40%;
+        margin-left: 7%;
+        margin-top: 5%;
+    }
+    
+    .ep-1
+    {
+        
+    }
+    
+    .ep-2
+    {
+        
+    }
+    
+}
 
 /*TABLET*/
 @media (min-width: 768px) and (max-width: 1023px)
