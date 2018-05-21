@@ -4,8 +4,7 @@
 }
 
 /*MOBIL*/
-@media(max-width: 767px)
-{
+
     body
     {
         margin: 0%;
@@ -442,11 +441,6 @@
         
         text-align: center;
     }
-    
-    
- 
-    
-}
 
 /*TABLET*/
 @media (min-width: 768px) and (max-width: 1023px)
