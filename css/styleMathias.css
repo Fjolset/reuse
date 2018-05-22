@@ -21,6 +21,7 @@
     header {
         overflow-x: hidden !important;
         width: 100%;
+        background-color: pink;
     }
     .up-logo {
         position: absolute;
