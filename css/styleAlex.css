@@ -590,6 +590,8 @@
     .fp-logo
     {
         width: 30%;
+        
+        position: absolute;
     }
     
     .fp-headerBillede
@@ -600,11 +602,17 @@
     .fp-billede
     {
         display: block;
+        
+        position: absolute;
     }
     
     .fp-boxes
     {
-
+        position: absolute;
+        
+        background-color: transparent;
+        
+        margin-top: 15%;
     }
     
     .fp-box
@@ -626,6 +634,18 @@
     {
         
     }
+    
+    
+    
+    
+    
+    
+    .fp-arrow-section
+    {
+        margin-top: 30%;
+    }
+    
+    
     
     
     
