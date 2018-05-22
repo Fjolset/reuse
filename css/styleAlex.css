@@ -110,11 +110,17 @@
     
     .fp-headerBillede
     {
+        background-color: forestgreen;
         
         width: 100%;
         height: 400px;
         
         z-index: -1;
+    }
+
+    .fp-billede
+    {
+        display: none;
     }
     
     /* -----------------------3 BOXES---------------------------- */
@@ -586,61 +592,63 @@
         width: 30%;
     }
     
+    .fp-headerBillede
+    {
+        background-color: transparent;
+    }
+    
     .fp-billede
     {
-        position: absolute;
-        
-        left: 0;
-        
-        z-index: -1;
+        display: block;
     }
     
     .fp-boxes
     {
-        display: flex;
-        
-        width: 100%;
-        height: 100px;
-        
-        background-color: transparent;
-        
-        z-index: 0;
-        
-        
+
     }
     
     .fp-box
     {    
-        width: 200px;
-        height: auto;
-        
-        background-color:darkgoldenrod;
-        
-        margin-top: -10%;
-        
+        width: 23%;
     }
     
     .fp-box1
     {
-        order: 1;
-        
-        margin-right: 10%;
-        margin-left: 5%;
+
     }
     
     .fp-box2
     {
-        order 2;
-        
-        margin-left: 10%;
-        margin-right: 5%;
+
     }
     
     .fp-box3
     {
-        order 3;
         
     }
+    
+    
+    
+    
+    
+    
+    
+    
+
+    /* FOOTER */
+    
+    .fp-footer-section
+    {
+        display: none;
+    }
+    
+    .fp-footer-billede
+    {
+        margin-bottom: -5%;
+    }
+    
+    
+    
     
     
     
