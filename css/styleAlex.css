@@ -239,8 +239,6 @@
         margin-bottom: 10%;
         
         text-align: center;
-        
-        background-color: cornflowerblue;
     }
     
     .fp-video-div
@@ -589,7 +587,9 @@
     
     .fp-logo
     {
-        width: 30%;
+        width: 26%;
+        
+        margin-left: 10%;
         
         position: absolute;
     }
@@ -604,6 +604,22 @@
         display: block;
         
         position: absolute;
+    }
+    
+    .fp-tekst
+    {
+        width: 25%;
+        
+        margin-left: 12%;
+        margin-top: 16%;
+        
+        background-color: transparent;
+        
+        color: white;
+        
+        font-size: 20px;
+        
+        text-align: left;
     }
     
     .fp-boxes
@@ -627,30 +643,167 @@
     
     .fp-box2
     {
-
+        
     }
     
     .fp-box3
     {
         
     }
-    
-    
-    
-    
-    
-    
+
     .fp-arrow-section
     {
         margin-top: 30%;
     }
     
+    /* INFOGRAPFIK */
     
     
     
+    /*DIAGRAM OG VIDEO */
     
+    .fp-diagram
+    {
+        float:left;
+        
+        width: 40%;
+        
+        margin: 2.5%;
+    }
+    
+    .fp-diaVideo
+    {
+        float: left;
+        
+        width: 80%;
+        
+        margin-left: 10%;
+    }
+    
+    .fp-video
+    {
+        width: 40%;
+        
+        height: 350px;
+        
+        margin: 2.5%;
+        
+        margin-top: 8%;
+        
+        border: 30px solid #00747E;
+    }
+    
+    .fp-video-div
+    {
+        background-color: transparent;
+    }
+    
+    
+    /* INFO BOKS */
+    
+    .fp-info-boks
+    {
+        display: none;
+    }
+    
+    .mobil-wrapper
+    {
+        height: 230px;
+        
+        display: flex;
+        
+        flex-wrap: wrap;
+        
+        padding-top: 15%;
+    }
+    
+    .mobil-info
+    {
+        width: 20%;
+        height: auto;
+    
+        text-align: center;
+    }
+    
+    .mobil-info1
+    {
+        order: 1;
+        
+        margin-left: 12%;
+        
+        text-align: center;  
+    }
+    
+    .mobil-info2
+    {
+        order: 2;
+        
+        margin-left: 0%;
+        
+        text-align: center;
+    }
+    
+    .mobil-info3
+    {
+        order: 3;
+        
+        margin-left: 0%;
+        
+        text-align: center;
+        
+    }
+    
+    .mobil-info4
+    {
+        order: 4;
+        
+        margin-left: 0%;
+        
+        text-align: center;
+    }
+    
+    .mobil-ikon1
+    {
+        margin-top: 5%;
+        
+        width: 40%;
+    }
+    
+    .mobil-ikon2
+    {
+        margin-top: 5%;
+        
+        width: 27%;
+    }
+    
+    .mobil-ikon3
+    {
+        margin-top: 5%;
+        
+        width: 37%;
+    }
+    
+    .mobil-ikon4
+    {
+        margin-top: 5%;
+        
+        width: 35%;
+    }
+    
+    .mobil-tekst
+    {
+        font-size: 2vh;
+
+        z-index: 3;
+        
+        font-weight: 600;
+        
+        margin-top: 3%;
+    }
+
     
 
+    
     /* FOOTER */
     
     .fp-footer-section
