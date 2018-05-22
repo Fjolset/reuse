@@ -71,8 +71,7 @@
 
 
 /*MOBIL*/
-@media(max-width: 767px)
-{
+
     body
     {
         margin: 0%;
@@ -89,8 +88,6 @@
         
         width: 150px;
         height: 80px;
-        background-color: brown;
-        
         
         z-index: 0; 
     }
@@ -113,7 +110,6 @@
     
     .fp-headerBillede
     {
-        background-color: aqua;
         
         width: 100%;
         height: 400px;
@@ -580,6 +576,107 @@
 {
     body
     {
-        background-color: crimson;
-    }  
+        
+        
+        
+    }
+    
+    .fp-logo
+    {
+        width: 30%;
+    }
+    
+    .fp-billede
+    {
+        position: absolute;
+        
+        left: 0;
+        
+        z-index: -1;
+    }
+    
+    .fp-boxes
+    {
+        display: flex;
+        
+        width: 100%;
+        height: 100px;
+        
+        background-color: transparent;
+        
+        z-index: 0;
+        
+        
+    }
+    
+    .fp-box
+    {    
+        width: 200px;
+        height: auto;
+        
+        background-color:darkgoldenrod;
+        
+        margin-top: -10%;
+        
+    }
+    
+    .fp-box1
+    {
+        order: 1;
+        
+        margin-right: 10%;
+        margin-left: 5%;
+    }
+    
+    .fp-box2
+    {
+        order 2;
+        
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+    
+    .fp-box3
+    {
+        order 3;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
