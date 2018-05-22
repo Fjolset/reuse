@@ -17,10 +17,17 @@
         margin: 0%;
         padding: 0%;
     }
+    .mobil-wrapper{
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+    }
     /*---------------Header----------------------*/
     header {
-        overflow-x: hidden !important;
         width: 100%;
+        overflow: hidden;
+        text-align: center;
+
     }
     .up-logo {
         position: absolute;
@@ -46,7 +53,6 @@
     }
     .up-h1 {
         margin-top: -25%;
-        margin-left: 27%;
         margin-bottom: 20%;
         color: white;
 
@@ -517,26 +523,7 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
-@media (max-width: 768px){
-    body.modal-open {
-    /* block scroll for mobile;
-    causes underlying page to jump to top;
-     prevents scrolling on all screens */
-    overflow: hidden;
-    position: fixed;
-}
-body.viewport-lg {
-    /* block scroll for desktop;
-     will not jump to top;
-     will not prevent scroll on mobile*/
-    position: absolute; 
-}
-    body {
-    /* STOP MOVING AROUND! */
-    overflow-x: hidden;
-    overflow-y: scroll !important;
-}
-}
+
 
 /*TABLET*/
 
