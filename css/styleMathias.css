@@ -55,171 +55,138 @@
         color: white;
 
     }
-    /*---------------- Navbar -------------*/
-    /*---------------- https://codepen.io/sergioandrade/pen/onkub -------------*/
-    a {
-        color: #333;
-        text-decoration: none;
-    }
-    .open {
-        position: absolute;
-        z-index: 5;
-        top: 5px;
-        right: 20px;
-        width: 50px;
-        height: 50px;
-        display: block;
-        cursor: pointer;
-        transition: opacity 0.2s linear;
-    }
-    .open span {
-        display: block;
-        float: left;
-        clear: both;
-        height: 4px;
-        width: 40px;
-        border-radius: 40px;
-        background-color: #000;
-        position: absolute;
-        right: 3px;
-        top: 3px;
-        overflow: hidden;
-        transition: all 0.4s ease;
-    }
-    .open span:nth-child(1) {
-        margin-top: 10px;
-        z-index: 9;
-    }
-    .open span:nth-child(2) {
-        margin-top: 20px;
-    }
-    .open span:nth-child(3) {
-        margin-top: 30px;
-    }
+    /* burger menu fra https://codepen.io/erikterwan/pen/EVzeRP 
+   jeg har ændret i noget kode således min sidder i højre side frem for venstre. 
+*/
 
+#menuToggle {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}
+
+/* span er de 3 streger som indikere burger menuen
+koden nedenfor er den transform som span påtager sig ved klik.
+*/
+
+#menuToggle span {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #00747e;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -3px);
+    background: white;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+
+#menu {
+    position: absolute;
+    width: 400px;
+    margin: -100px 0 0 -320px;
+    padding: 30px 0px;
+    padding-top: 105px;
+    opacity: 0.95;
+    background: #00747e;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    text-align: center;
+}
+
+#menu li {
+
+    padding: 10px 0;
+    font-size: 22px;
     
-    .sub-menu li {
-        display: block;
-        float: right;
-        clear: both;
-        height: auto;
-        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-    .sub-menu li:first-child {
-        margin-top: 180px;
-    }
-    .sub-menu li:nth-child(1) {
-        -webkit-transition-delay: 0.05s;
-    }
-    .sub-menu li:nth-child(2) {
-        -webkit-transition-delay: 0.10s;
-    }
-    .sub-menu li:nth-child(3) {
-        -webkit-transition-delay: 0.15s;
-    }
-    .sub-menu li:nth-child(4) {
-        -webkit-transition-delay: 0.20s;
-    }
-    .sub-menu li:nth-child(5) {
-        -webkit-transition-delay: 0.25s;
-    }
-    .sub-menu li a {
-        color: #fff;
-        font-family: 'Lato', Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        width: 100%;
-        display: block;
-        float: left;
-        line-height: 40px;
-    }
+}
+#menu li a {
+    text-decoration: none;
+    color: white;
+}
 
-    .oppenned .sub-menu {
-        opacity: 1;
-        height: 400px;
-        width: 100px;
-    }
-    .oppenned span:nth-child(2) {
-        overflow: visible;
-    }
-    .oppenned span:nth-child(1),
-    .oppenned span:nth-child(3) {
-        z-index: 100;
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-    .oppenned span:nth-child(1) {
-        -webkit-transform: rotate(45deg) translateY(12px) translateX(17px);
-        transform: rotate(45deg) translateY(12px) translateX(4px);
-    }
-    .oppenned span:nth-child(2) {
-        height: 450px;
-        width: 270px;
-        right: -20px;
-        top: -160px;
-        border-bottom-left-radius: 50%;
-        border-bottom-right-radius: 0%;
-        background-color: rgba(0,117,127, 0.95);
-    }
-    .oppenned span:nth-child(3) {
-        -webkit-transform: rotate(-45deg) translateY(-10px) translateX(10px);
-        transform: rotate(-45deg) translateY(-10px) translateX(3px);
-    }
-    .oppenned li {
-        margin-right: 218px;
-    }
+/*
+ * And let's slide it in from the left
+ */
 
-    .button {
-        display: block;
-        float: left;
-        clear: both;
-        padding: 20px 40px;
-        background: #fff;
-        border-radius: 3px;
-        border: 2px solid #00747e;
-        overflow: hidden;
-        position: relative;
-    }
-    .button:after {
-        transition: -webkit-transform 0.3s ease;
-        transition: transform 0.3s ease;
-        transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-        content: "";
-        position: absolute;
-        height: 200px;
-        width: 400px;
-        -webkit-transform: rotate(45deg) translateX(-540px) translateY(-100px);
-        transform: rotate(45deg) translateX(-540px) translateY(-100px);
-        background: #00747e;
-        z-index: 1;
-    }
-    .button:before {
-        transition: -webkit-transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        content: attr(title);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        color: #fff;
-        z-index: 2;
-        text-align: center;
-        padding: 20px 40px;
-        -webkit-transform: translateY(200px);
-        transform: translateY(200px);
-    }
-    .button:hover {
-        text-decoration: none;
-    }
-    .button:hover:after {
-        -webkit-transform: translateX(-300px) translateY(-100px);
-        transform: translateX(-300px) translateY(-100px);
-    }
-    .button:hover:before {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
+#menuToggle input:checked ~ ul {
+    transform: none;
+}
+
     /*---------------- ORP Section 1 ----------------*/
     section {
         width: 100%;
