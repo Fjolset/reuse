@@ -233,6 +233,10 @@ koden nedenfor er den transform som span påtager sig ved klik.
         height: 260px;
         margin-bottom: 15%;
     }
+.orp-map2{
+    display: none;
+    
+}
     /*----------------  Footer ----------------*/
     .footer {
         position: absolute;
