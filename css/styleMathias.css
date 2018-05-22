@@ -19,10 +19,10 @@
     }
     /*---------------Header----------------------*/
     header {
+       height: 100%;
+        overflow: hidden !important;
         width: 100%;
-        overflow: hidden;
-        text-align: center;
-
+        position: fixed;
     }
     .up-logo {
         position: absolute;
