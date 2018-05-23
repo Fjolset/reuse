@@ -559,10 +559,19 @@
     
     .ep-ikon
     {
-        width: 40%;
-        margin-left: 7%;
+        width: 30%;
+        margin-left: 12%;
         margin-top: 5%;
-    }    
+    }
+
+    .ep-ikoner
+    {
+        width: 110%;
+        
+        border-radius: 15%;
+    }
+
+    
 }
 
 /*TABLET*/
@@ -702,7 +711,6 @@
     
     .fp-info-boks
     {
-        display: none;
     }
     
     .mobil-wrapper
@@ -826,10 +834,36 @@
     
     .ep-ikon
     {
-        width: 18%;
-        margin-left: 5%;
-        margin-top: 5%;
-    }   
+        width: 10%;
+        
+    }
+    
+    .ep-ikoner
+    {
+        width: 170%;
+        
+        border-radius: 15%;
+    }
+    
+    .ep-galleri
+    { 
+        width: 100%;
+        
+        height: auto;
+        margin-bottom: 5%;
+        
+        background-color: transparent;
+    }
+    
+    .ep-wrapper
+    {
+        width: 90%;
+        
+        display: flex;
+        
+        margin-left: 1%;
+    }
+       
     
     
     
@@ -843,32 +877,7 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     
 }
