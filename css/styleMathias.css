@@ -17,8 +17,7 @@
 body {
     margin: 0%;
     padding: 0%;
-    background-color: #e9e8e9;
-    
+
 }
 
 .mobil-wrapper {
@@ -250,13 +249,21 @@ section {
 .orp-section {
     display: none;
 }
-.fpp-info-boks{
+
+.fpp-info-boks {
     display: none;
 }
+
+.orp-info-tekst{
+     margin-bottom: 15%;   
+}
+
 /*---------------- Åbningstider ----------------*/
-.mmobil-section{
+
+.mmobil-section {
     display: none;
 }
+
 /*----------------  Map ----------------*/
 
 .orp-map {
@@ -576,6 +583,10 @@ img.hover-shadow {
 
 /*TABLET*/
 
+p {
+    text-align: left;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
     body {
         background-color: darkorange;
@@ -640,16 +651,32 @@ img.hover-shadow {
         width: 15%;
         font-size: 36px;
         color: white;
-        border-radius: 25%;
+        border-radius: 15px;
         height: 50px;
         margin-left: 10%;
         margin-bottom: 2%;
     }
+    .orpp-knap {
+        background-color: #00747e;
+        width: 15%;
+        font-size: 36px;
+        color: white;
+        border-radius: 15px;
+        height: 100px;
+        margin-left: 10%;
+        margin-bottom: 2%;
+    }
+
+    .orp-info-tekst {
+        position: absolute;
+        top: 75.3%;
+        left: 44%;
+    }
     /*---------------- Åbningstider ----------------*/
-    .mobil-section{
+    .moobil-section {
         display: none;
     }
-    .fp-info-boks{
+    .fp-info-boks {
         display: none;
     }
     .mmobil-section {
@@ -660,10 +687,11 @@ img.hover-shadow {
         display: block;
         text-align: center;
         position: absolute;
-        right: 150px;
+        right: 140px;
         top: 80%;
         width: 30%;
-        padding-top: 20px;    
+        margin-top: 16%;
+        padding-top: 20px;
         padding-left: 55px;
     }
 
@@ -705,14 +733,13 @@ img.hover-shadow {
         margin-left: 7%;
         text-align: center;
     }
-       .mobil-info4
-    {
-        
+    .mobil-info4 {
+
         margin-left: 15%;
-        
+
         text-align: center;
     }
-    
+
 
     .mmobil-ikon1 {
         margin-top: 5%;
@@ -730,11 +757,10 @@ img.hover-shadow {
 
         width: 30%;
     }
-     
-    .mobil-ikon4
-    {
+
+    .mobil-ikon4 {
         margin-top: 5%;
-        
+
         width: 80%;
     }
 
@@ -770,6 +796,83 @@ img.hover-shadow {
         width: 100%;
 
     }
+    footer {
+        position: absolute;
+        margin-top: -6%;
+    }
+    /* ------------- SKOLE----------- */
+    section {
+        width: 100%;
+        text-align: center;
+    }
+    .sp-tekst {
+        margin-top: 10%;
+        width: 30%;
+        height: auto;
+        margin-left: 3%;
+        margin-bottom: 2%;
+    }
+
+    .sp-billede {
+
+        width: 30%;
+        height: auto;
+        margin-top: -15%;
+        margin-left: 50%;
+        margin-bottom: 15%;
+        overflow: hidden;
+    }
+    .sp-knap {
+        background-color: #00747e;
+        padding-top: 15px;
+        float: left;
+        width: 10%;
+        font-size: 24px;
+        color: white;
+        border-radius: 15px;
+        height: 50px;
+        margin-left: 4%;
+        margin-bottom: 2%;
+    }
+
+    .sp2 {
+        margin-left: 12%;
+    }
+
+    /* ------- Fivilig --------- */
+    .fvp-tekst {
+        width: 30%;
+        height: auto;
+        margin-left: 10%;
+        margin-bottom: 2%;
+    }
+
+    .fvp-billede {
+        width: 40%;
+        height: auto;
+        margin-top: -15%;
+        margin-left: 50%;
+        margin-bottom: 15%;
+        overflow: hidden;
+    }
+    
+    .fvp-tlf {
+        width: 50%;
+        margin-left: -3%;
+        margin-top: -23.5%;
+        margin-bottom: 20%;
+    }
+    .fvp-icon {
+        width: 60%;
+    }
+    .fvp-icon2 {
+        width: 13%;
+    }
+    .fvp-icon3{
+        margin-left: 60%;
+        margin-top: -10%;
+    }
+
 
 
 }
