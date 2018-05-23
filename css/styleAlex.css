@@ -841,10 +841,13 @@
     .fp-footer-section
     {
         
-        width: 100%;
-        height: auto;
+        width: 20%;
         
         background-color: #00747e;
+        
+        position: absolute;
+        
+        margin-bottom: 50%;
     }
     
     .fp-footer-billede
@@ -968,6 +971,7 @@
     {
         
         width: 50%;
+        display: none;
     }
     
     .fp-logo-aarhus
