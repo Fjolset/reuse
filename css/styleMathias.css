@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 * {
     box-sizing: border-box;
 }
@@ -64,12 +66,16 @@ header {
     margin-top: -25%;
     margin-bottom: 20%;
     color: white;
-
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
 }
 
 /* burger menu fra https://codepen.io/erikterwan/pen/EVzeRP 
    jeg har ændret i noget kode således min sidder i højre side frem for venstre. 
 */
+#desktopmenu{
+    display: none;
+}
 
 #menuToggle {
     display: block;
@@ -611,9 +617,46 @@ p {
         margin-left: 2%;
     }
     .up-h1 {
-        font-size: 55px;
+        font-size: 95px;
         margin-top: -15%;
         margin-bottom: 12%;
+    }
+    /* ----- menu ------ */
+    #menuToggle{
+        display: none;
+    }
+    
+    #desktopmenu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        z-index: 5;
+        left: 60px;
+        top: 9px;
+    
+    }
+    .desk-menu{
+        margin-left: 63%;
+        width: 100%;
+        
+    }
+    
+    .dsk-mp{
+        text-decoration: none;
+        list-style-type: none;
+        font-family: 'Raleway', sans-serif;
+        float: left;
+        width: 8%;
+        color: black;
+        margin-left: -2%;
+        font-size: 15px;
+        transition: all .2s ease-in-out;
+    }
+    
+    .dsk-mp:hover{
+        color: #00747e;
+        transform: scale(1.2    )
     }
     /* -------------- ORP -----------*/
     section {
@@ -873,6 +916,25 @@ p {
         margin-top: -10%;
     }
 
+/* ------------------- Aflever ting ---------- */ 
+    .ap-h2 {
+        margin-top: 2%;
+        width: 40%;
+    }
+    .ap-tekst {
+        width: 30%;
+        height: auto;
+        margin-left: 10%;
+        margin-bottom: 2%;
+    }
 
+    .ap-billede {
+        width: 40%;
+        height: auto;
+        margin-top: -16%;
+        margin-left: 50%;
+        margin-bottom: 15%;
+        overflow: hidden;
+    }
 
 }
