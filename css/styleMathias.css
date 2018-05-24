@@ -251,27 +251,29 @@ section {
     padding: 5px 2px;
     margin-left: 25%;
     margin-bottom: 15%;
-    
+
 }
-.orp-knap a{
+
+.orp-knap a {
     text-decoration: none;
     color: white;
 }
 
-  .orpp-knap{
-        background-color: #00747e;
-        width: 50%;
-        font-size: 36px;     
-        border-radius: 15px;
-        height: 100px;
-        margin-left: 25%;
-        margin-bottom: 2%;
-    }
+.orpp-knap {
+    background-color: #00747e;
+    width: 50%;
+    font-size: 36px;
+    border-radius: 15px;
+    height: 100px;
+    margin-left: 25%;
+    margin-bottom: 2%;
+}
 
 .orpp-knap a {
     text-decoration: none;
     color: white;
 }
+
 .orp-section {
     display: none;
 }
@@ -972,7 +974,7 @@ p {
         -moz-box-shadow: 10px 10px 5px 0px rgba(0, 116, 126, 1);
         box-shadow: 10px 10px 5px 0px rgba(0, 116, 126, 1);
     }
-    .uep-videos{
+    .uep-videos {
         width: 100%;
     }
 
@@ -1130,4 +1132,40 @@ p {
     .overlays {
         margin-left: 15%;
     }
+
+    /*------------ EVENT --------------*/
+    .ep-ikon {
+        position: relative;
+    }
+
+    .ep-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 170%;
+        opacity: 0.80;
+        border-radius: 15%;
+        transition: .5s ease;
+        background-color: #00747e
+    }
+
+    .ep-ikon:hover .ep-overlay {
+        opacity: 0;
+    }
+
+
+    .text {
+        color: white;
+        font-size: 1.3vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
 }
