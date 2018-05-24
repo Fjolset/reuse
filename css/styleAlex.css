@@ -568,18 +568,47 @@
         
         height: 200px;
         
-        background-color: darkorange;
+        background-color: transparent;
     }
     
     .ep-textFelt
     {
+        margin-bottom: 10%;
     }
     
     .ep-tekst
     {
+        width: 80%;
+        
+        margin-left: 10%;
     }
     
 /* GALLERI */
+    
+    .ep-festivalsVogn
+{
+    width: 70%;
+    
+    filter: contrast(40%);
+    
+    z-index: 1;
+}
+
+    .ep-bygDinEgen-tekst
+{
+    font-size: 4vw;
+    
+    position: absolute;
+    
+    margin-left: 20%;
+    
+    margin-top: 15%;
+    
+    color: white;
+    
+    z-index: 2;
+}
+    
     
     
     .ep-galleri
@@ -588,8 +617,6 @@
         
         height: auto;
         margin-bottom: 5%;
-        
-        background-color: firebrick;
     }
     
     .ep-wrapper
@@ -1085,7 +1112,122 @@
     }
     
 
-    /* EVENT UNDERSIDER */
+    /* EVENT UNDERSIDE */
+    
+    .ep-textFelt
+    {
+        width: 100%;
+        
+        margin-left: 10%;
+        
+        float: left;
+        
+        margin-bottom: 10%;
+        
+    }
+    
+    .ep-textFelt1
+    {
+        width: 30%;
+        
+        height: 200px;
+        
+    }
+    
+    .ep-underoverskrift
+    {
+        
+        
+        
+    }
+    
+    .ep-tekst
+    {
+        width: 100%;
+    }
+    
+    .ep-knap
+    {
+        background-color: #00747e;
+        width: 40%;
+        font-size: 2vw;
+        color: white;
+        border-radius: 15px;
+        height: auto;
+        margin-left: 10%;
+        margin-bottom: 2%;
+    }
+    
+    .ep-knap-tekst 
+    {
+        color: white;
+        
+        text-align: center;
+        
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    a
+    {
+        text-decoration: none;
+    }
+
+    .ep-festivalsVogn
+    {
+        width: 160%;
+        
+        border-radius: 60px;
+        
+        z-index: 0;
+        
+        filter: contrast(40%)
+    }
+    
+    .ep-nextEvent1
+    {
+        position: absolute;
+        
+        width: 20%;
+        
+        margin-left: 50%;
+        
+        float: right;
+        
+        margin-top: -230px;
+        
+    }
+    
+    .ep-nextEvent-overskrift
+    {
+        margin-right: -50%;
+    }
+    
+    .ep-bygDinEgen-tekst
+    {
+        position: absolute;
+        
+        margin-top: 30%;
+        
+        margin-left: 40%;
+        
+        font-size: 1.8vw;
+        
+        color: white;
+    }
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* EVENT UNDERSIDE GALLERI */
     
     .ep-ikon
     {

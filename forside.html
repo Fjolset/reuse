@@ -16,6 +16,39 @@
 <body>
 <header>
     <div class="navbar"></div>
+    
+    <!---- Desktop menu ---->
+          <nav id="desktopmenu">
+              <ul class="desk-menu">
+                  <a href="forside.html"><li class="dsk-mp">Forside</li></a>
+                  <a href="event.html"><li class="dsk-mp">Event</li></a>
+                  <a href="skole.html"><li class="dsk-mp">Skole</li></a>
+                  <a href="besog.html"><li class="dsk-mp">Besøg</li></a>
+                  <a href="om.html"><li class="dsk-mp">Om REUSE</li></a>
+              </ul>
+          </nav>
+           <!---- Mobil menu ---->
+    
+    <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+
+                <!--
+    jeg bruger span som hamburgerlinjerne
+    -->
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li><a href="forside.html">Forside</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="skole.html">Skole</a></li>
+                    <li><a href="besog.html">Besøg</a></li>
+                    <li><a class="button" href="om.html">Om REUSE</a></li>
+                </ul>
+            </div>
+        </nav>
+    
     <section>
         <div class="fp-headerBillede">
             
@@ -171,7 +204,6 @@
                     <img class="fp-footer-placering-ikon" src="image/Placering-hvid.svg">
                 
                 </div>
-                 
 
                     <img class="fp-footer-logo-desk" src="image/Arhus-Logo-hvid.svg">
             </div>
