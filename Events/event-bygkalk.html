@@ -18,6 +18,19 @@
         <img class="up-headerBillede" src="../image/Header-Byg-en-kalk.svg" alt="om reuse">
         <img class="up-ikon" src="../image/Event-hvid.svg">
         <h1 class="up-h1">Byg en Kælk</h1>
+         <!---- Desktop menu ---->
+          <nav id="desktopmenu">
+              <ul class="desk-menu">
+                  <a href="../forside.html"><li class="dsk-mp">Forside</li></a>
+                  <a href="../event.html"><li class="dsk-mp">Event</li></a>
+                  <a href="../skole.html"><li class="dsk-mp">Skole</li></a>
+                  <a href="../besog.html"><li class="dsk-mp">Besøg</li></a>
+                  <a href="../om.html"><li class="dsk-mp">Om REUSE</li></a>
+              </ul>
+          </nav>
+           
+           
+           <!---- Mobil menu ---->
       <nav role="navigation">
             <div id="menuToggle">
                 <input type="checkbox" />
@@ -39,10 +52,14 @@
         </nav>
     </header>
 </body>
-    <h2 style="text-align:center">underoverskrift</h2>
+   <section>
+    <h2 class="uep-h2">Underoverskrift</h2>
     <p class="uep-tekst">orem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper. Lorem Ipsum har ikke alene overlevet fem århundreder, men har også vundet indpas i elektronisk typografi uden væsentlige ændringer. Sætningen blev gjordt kendt i 1960'erne med lanceringen af Letraset-ark, som indeholdt afsnit med Lorem Ipsum, og senere med layoutprogrammer som Aldus PageMaker, som også indeholdt en udgave af Lorem Ipsum. 
     </p>
-
+    </section>
+    <div class="uep-video">
+        <iframe class="uep-videos" width="560" height="315" src="https://www.youtube.com/embed/79DijItQXMM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
 <div class="row">
   <div class="column flex">
     <img src="../image/Bus-bla.svg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
@@ -53,7 +70,7 @@
   <div class="column flex">
     <img src="../image/Bus-bla.svg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
   </div>
-  <div class="column flex">
+  <div class="column flex flex2">
     <img src="../image/Bus-bla.svg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
   </div><div class="column flex">
     <img src="../image/Bus-bla.svg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
@@ -106,7 +123,7 @@
       <p id="caption"></p>
     </div>
 
-
+    <div class="overlays">
     <div class="column overlay">
       <img class="demo cursor" src="../image/Bus-bla.svg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
     </div>
@@ -124,6 +141,7 @@
       <img class="demo cursor" src="../image/Bus-bla.svg" style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
     </div><div class="column overlay">
       <img class="demo cursor" src="../image/Bus-bla.svg" style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
+    </div>
     </div>
   </div>
     
