@@ -130,12 +130,12 @@
         display: flex;
         
         width: 100%;
-        height: 100px;
-        
-        background-color: antiquewhite;
+        height: 160px;
         
         z-index: 0;
-    }
+        
+        margin-bottom: 10%;
+    } 
     
     .fp-box
     {
@@ -144,9 +144,17 @@
         width: 200px;
         height: auto;
         
-        background-color:darkgoldenrod;
+        background-color:white;
         
         margin-top: -10%;
+        
+        border-radius: 20px;
+        
+        -webkit-box-shadow: 27px -29px 62px -30px rgba(0,0,0,0.75);
+        -moz-box-shadow: 27px -29px 62px -30px rgba(0,0,0,0.75);
+        box-shadow: 27px -29px 62px -30px rgba(0,0,0,0.75);
+        
+        
     }
     
     .fp-box1
@@ -155,6 +163,19 @@
         
         margin-right: 10%;
         margin-left: 5%;
+    }
+
+    .per
+    {
+    width: 100%;
+    height: 20%;;
+
+    margin-top: 120%;
+    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+    background-color: #00747E;
     }
     
     .fp-box2
@@ -175,8 +196,7 @@
     
     .fp-arrow-section
     {
-        margin-top: 10%;
-        margin-bottom: 10%;
+
         
         text-align: center;
         
@@ -227,6 +247,8 @@
 
     .fp-infoGraf-section
     {
+        margin-top: 20%;
+        
         width: 100%;
         text-align: center;
     }
@@ -582,6 +604,33 @@
         
         margin-left: 10%;
     }
+
+    .ep-knap
+    {
+        background-color: #00747e;
+        width: 30%;
+        font-size: 3vw;
+        color: white;
+        border-radius: 15px;
+        height: auto;
+        margin-left: 34%;
+        margin-bottom: 2%;
+    }
+    
+    .ep-knap-tekst 
+    {
+        color: white;
+        
+        text-align: center;
+        
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    a
+    {
+        text-decoration: none;
+    }
     
 /* GALLERI */
     
@@ -702,22 +751,23 @@
     }
     
     .fp-boxes
-    {
-        position: absolute;
-        
+    {   
         background-color: transparent;
         
         margin-top: 15%;
+    
     }
     
     .fp-box
     {    
         width: 23%;
+        
+        
     }
     
     .fp-box1
     {
-
+        
     }
     
     .fp-box2
