@@ -1197,7 +1197,8 @@ p {
 
     .text {
         color: white;
-        font-size: 1.3vw;
+        font-family: "Raleway";
+        font-size: 1.2vw;
         position: absolute;
         top: 50%;
         left: 50%;
