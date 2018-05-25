@@ -690,7 +690,6 @@
     
     filter: contrast(40%);
     
-    z-index: 1;
 }
 
     .ep-bygDinEgen-tekst
@@ -705,7 +704,7 @@
     
     color: white;
     
-    z-index: 2;
+    z-index: 1;
 }
     
     
