@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 *
 {
     box-sizing: border-box;
@@ -69,6 +71,21 @@
 
 /*MOBIL*/
 
+    p
+    {
+        font-family: Raleway;
+    }
+
+    h1
+    {
+        font-family: Raleway;
+    }
+
+    h2
+    {
+        font-family: Raleway;
+    }
+
     body
     {
         margin: 0%;
@@ -115,7 +132,6 @@
 
     .fp-billede
     {
-        width: 100%;
         z-index: -4;
         
         position: absolute;
@@ -146,7 +162,7 @@
         
         background-color:white;
         
-        margin-top: -10%;
+        margin-top: -15%;
         
         border-radius: 20px;
         
@@ -459,6 +475,8 @@
 
         
         z-index: 3;
+        
+        font-family: Raleway;
     }
     
     /*------------------------------FOOTER-------------------*/
@@ -846,6 +864,12 @@
 
     /* ARROW */
     
+    .fp-arrow-section
+    {
+        margin-top: 2%;
+        margin-bottom: -10%;
+    }
+    
     /* INFOGRAPFIK */
     
     .fp-infoGraf-borders
@@ -1085,6 +1109,7 @@
         font-weight: 600;
         
         margin-top: 3%;
+        
     }
 
     
@@ -1138,7 +1163,7 @@
     .fp-footer-tid
     {
         
-        margin-right: 50px;
+        margin-right: 25px;
     }
     
     .fp-footer-tid-p
@@ -1160,7 +1185,7 @@
     
     .fp-footer-telefon
     {
-        margin-right: 120px;
+        margin-right: 125px;
         margin-top: 0.5%;
     }
     
@@ -1301,7 +1326,7 @@
         
         width: 20%;
         
-        margin-left: 50%;
+        margin-left: 45%;
         
         float: right;
         
