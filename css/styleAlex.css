@@ -328,11 +328,14 @@
     {
         width: 40%;
     }
-#container{
-    margin: 20px;
-    width: 250px;
-    height: 250px;
-    position: relative;
+
+
+#container {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border: solid;
 }
     
     /*----------------------VIDEO--------------------*/

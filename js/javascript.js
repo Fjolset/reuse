@@ -1,3 +1,5 @@
+
+
 /*------- lightbox -------- */
 
 function openModal() {
@@ -37,3 +39,4 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
+console.log('xxxxx')
