@@ -952,6 +952,44 @@ p {
         margin-bottom: 15%;
         overflow: hidden;
     }
+    
+    /* -------------- Besøg ---------*/
+    
+     .bp-h2 {
+        margin-top: 2%;
+        width: 32%;
+    }
+    .bp-tekst {
+        width: 30%;
+        height: auto;
+        margin-left: 10%;
+        margin-bottom: 2%;
+    }
+    .th{
+        margin-left: 50%;
+    }
+    .th2{
+        margin-left: 40.5%;
+    }
+    
+    .bp-billede {
+        width: 30%;
+        height: auto;
+        margin-top: -16%;
+        margin-left: 50%;
+        margin-bottom: 5%;
+        overflow: hidden;
+    }
+    .tv{
+        margin-left: 10%;
+    }
+    .tn{
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+    .tc {
+        margin-left: 10%;
+    }
     /*------------- Event undersider ------*/
     .uep-h2 {
         margin-top: 2%;
