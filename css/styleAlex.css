@@ -191,7 +191,7 @@ body {
     width: 100%;
     height: 20%;
 
-    margin-top: 10%;
+    margin-top: 31%;
 
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -258,6 +258,8 @@ body {
     padding-left: 5%;
     padding-right: 5%;
 }
+
+
 
 .fp-box-btn a {
     color: white;
