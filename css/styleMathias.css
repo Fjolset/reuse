@@ -45,7 +45,7 @@ header {
 
 .up-logo {
     position: absolute;
-    z-index: 2;
+    z-index: 6;
     top: 0;
     left: 0;
     width: 20%;
