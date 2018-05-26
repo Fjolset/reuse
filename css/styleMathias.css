@@ -389,9 +389,11 @@ section {
 .fvp-billede {
 
     width: 80%;
+    height: auto;
     display: height: auto;
     margin-left: 10%;
-    margin-bottom: 2%;
+    margin-bottom: 20%;
+
     overflow: hidden;
 }
 
@@ -913,7 +915,7 @@ p {
     .fvp-billede {
         width: 40%;
         height: auto;
-        margin-top: -15%;
+        margin-top: -21%;
         margin-left: 50%;
         margin-bottom: 15%;
         overflow: hidden;
@@ -922,7 +924,7 @@ p {
     .fvp-tlf {
         width: 50%;
         margin-left: -3%;
-        margin-top: -23.5%;
+        margin-top: -21.5%;
         margin-bottom: 20%;
     }
     .fvp-icon {
@@ -979,7 +981,7 @@ p {
     .bp-billede {
         width: 30%;
         height: auto;
-        margin-top: -16%;
+        margin-top: -19%;
         margin-left: 50%;
         margin-bottom: 5%;
         overflow: hidden;
