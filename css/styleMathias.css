@@ -794,8 +794,8 @@ p {
     }
 
     .mmobil-info1 {
-
-        margin-bottom: 6%;
+margin-top: 0%;
+        margin-bottom: -9%;
         width: 50%;
         text-align: center;
     }
@@ -810,7 +810,7 @@ p {
         text-align: center;
     }
     .mmobil-info4 {
-
+margin-top: 2%;
         margin-left: 18%;
 
         text-align: center;
@@ -843,11 +843,14 @@ p {
 
 
     .mmobil-tekst {
-        font-size: 1s5px;
+        font-size: 15px;
         margin-top: 2%;
         z-index: 3;
     }
-
+    .mmobil-knap{
+        width: 80%;
+        margin-left: -27%;
+    }
 
     /* ----------------------------------EVENT---------------------------*/
     .ep-nextEvent {
