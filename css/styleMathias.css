@@ -21,9 +21,10 @@ body {
     padding: 0%;
 
 }
-a{
-        color: white;
-    }
+.sa{
+    color: white;
+}
+
 .mobil-wrapper {
     overflow: hidden;
     width: 100%;
