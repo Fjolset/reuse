@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/styleAlex.css">
 	<link rel="stylesheet" type="text/css" href="css/styleMathias.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="width=device-width, inistial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
      
     
@@ -50,17 +50,16 @@
     <section>
         <div class="fp-headerBillede">
             <img class="fp-billede" viewBox="0 0 60 55" src="image/Header-Forside.svg">
+            <img class="fp-billede-mobil" viewbox="0 0 60 55" src="image/mobil-forside-header.svg">
+            
           
             <div class="fp-logo">
                 <img src="image/REUSE-Logo.svg">
             </div>
         
-            <div class="fp-tekst">
-                <p>
-                    vLorem ipsum dolor sit amet, consectetuer
-                    adipiscing elit, sed diam nonummy nibh
-                    euismod tincidunt ut Lorem ipsum dolor sit
-                    amet, consectetuer adipiscing elit, sed diam  
+            <div class="fp-tekst-wrapper">
+                <p class="fp-tekst">
+                    På Reuse på Godsbanen kan du gøre et fund og blive klogere på genbrug og upcycling. I stedet for at tingene bliver til affald, stilles de frem, og kan afhentes af andre. På den måde får tingene en ekstra chance før de endegyldigt bliver til affald. 
                 </p>
             </div>
         </div>
@@ -73,7 +72,9 @@
                 
                 <h2 class="fp-box-overskrift1">Aflevere ting</h2>
                 
-                <p class="fp-box-tekst">brødtekst</p>
+                <p class="fp-box-tekst">Har du storskrald, du tænker kunne få nyt liv på Reuse? Send det til os eller aflever selv..
+Lige meget hvor i kommunen du er fra, kan du aflevere brugbare ting og sager på Reuse i åbningstiden, eller på alle Aarhus’ seks traditionelle genbrugsstationer.
+</p>
                 
                 <div class="per"> 
                     
@@ -89,9 +90,9 @@
                 
                 <h2 class="fp-box-overskrift1">Event</h2>
                 
-                <p class="fp-box-tekst">brødtekst</p>
+                <p class="fp-box-tekst">Reuse inviterer til events om genbrug og upcycling, der er arrangeret af vores frivillige. Alle events er åbne for deltagelse og det er gratis at deltage. </p>
                 
-                <div class="per">
+                <div class="per2">
                     
                     <h2 class="fp-box-btn"> <a href="event.html">Læs mere</a></h2>
                     
@@ -105,9 +106,9 @@
                 
                 <h2 class="fp-box-overskrift2">Bliv frivillig</h2>
                 
-                <p class="fp-box-tekst">brødtekst</p>
+                <p class="fp-box-tekst">Reuse består af mange frivillige, og du kan blive en del af teamet. Har du hovedet fuld af ideér og er du interesseret i at hjælpe til nede på stationen, så kontakt os!</p>
                 
-                <div class="per">
+                <div class="per3">
                     
                     <h2 class="fp-box-btn"> <a href="frivillig.html">Læs mere</a></h2>
                     
@@ -181,12 +182,14 @@
     
     <img class="fp-info-boks" src="image/info-bord-mobil.svg">
     
-    <img class="fp-info-boks-desktop" src="image/Info-border-desk.svg">
+    
     
 <section class="mobil-section">
   
 <div class="mobil-wrapper">
-
+    
+    <img class="fp-info-boks-desktop" src="image/Info-border-desk.svg">
+    
     <div class="mobil-info1 mobil-info">
             <img class="mobil-ikon1" src="image/Ur-bla.svg">
         <div class="mobil-tekst">Alle dage 12-17 <br>også weekender og helligdage</div>
@@ -321,8 +324,36 @@ var bar = new ProgressBar.Circle(container, {
 });
 bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
 bar.text.style.fontSize = '2rem';
+        
 
-bar.animate(0.75);  // Number from 0.0 to 1.0
+                     
+    
+    
+$.fn.isInViewport = function() {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+$(window).on('resize scroll', function() {
+  $('#container').each(function() {
+      var activeColor = $(this).attr('id');
+    if ($(this).isInViewport()) {
+      $('#fixed-' + activeColor).addClass(activeColor + '-active');
+        bar.animate(0.75);  // Number from 0.0 to 1.0
+        
+    } else {
+      $('#fixed-' + activeColor).removeClass(activeColor + '-active');
+    }
+  });
+}); 
+        
+                
+
 </script>
     </body>
 </html>
