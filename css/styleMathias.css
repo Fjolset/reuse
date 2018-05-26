@@ -24,6 +24,9 @@ body {
 .sa{
     color: white;
 }
+.ea{
+    color: black;
+}
 
 .mobil-wrapper {
     overflow: hidden;
