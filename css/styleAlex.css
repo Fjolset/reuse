@@ -922,20 +922,28 @@ a {
     }
 
     .bob {
-        margin-left: 4%;
-        margin-right: 4%;
+        margin-left: 5%;
+        margin-right: 2%;
     }
 
     .fp-infoGraf-border1 {
         width: 25%;
+        
+        margin-left: 10%;
     }
 
     .fp-infoGraf-border2 {
         width: 25%;
+        
+        margin-right: -40px;
+        margin-left: 10px;
+        
+    
     }
 
     .fp-infoGraf-border3 {
         width: 25%;
+        
     }
 
     /* INFOGRAF TEKST I BORDERS */
