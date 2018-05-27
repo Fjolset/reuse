@@ -1061,7 +1061,7 @@ margin-top: 2%;
     .modal {
         display: none;
         position: fixed;
-        z-index: 1;
+        z-index: 7;
         padding-top: 30px;
         left: 0;
         top: 0;
@@ -1077,7 +1077,7 @@ margin-top: 2%;
         background-color: #fefefe;
         margin: auto;
         padding: 0;
-        width: 60%;
+        width: 50%;
         height: 500px;
         overflow: hidden;
         margin-bottom: 2%;
@@ -1101,7 +1101,7 @@ margin-top: 2%;
     }
 
     .mySlides {
-        width: 80%;
+        width: 100%;
         display: none;
     }
 
