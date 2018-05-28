@@ -294,12 +294,13 @@
     <script>
     // progressbar.js@1.0.0 version is used
 // Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+        //https://kimmobrunfeldt.github.io/progressbar.js/
 
 var bar = new ProgressBar.Circle(container, {
   color: '#00747e',
   // This has to be the same size as the maximum width to
   // prevent clipping
-  strokeWidth: 4,
+  strokeWidth: 4,   
   trailWidth: 1,
   easing: 'easeInOut',
   duration: 4200,
@@ -326,8 +327,8 @@ bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
 bar.text.style.fontSize = '2rem';
         
 
-                     
-    
+bar.animate(0.75);  // Number from 0.0 to 1.0                  
+/* ------------------ Scroll------------- */    
     
 $.fn.isInViewport = function() {
   var elementTop = $(this).offset().top;
