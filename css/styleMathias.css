@@ -452,10 +452,9 @@ section {
 }
 
 .uep-video {
-    width: 90%;
     height: 315px;
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 20%;
     margin-bottom: 5%;
 }
 
@@ -1026,9 +1025,6 @@ margin-top: 2%;
         margin-left: 50%;
         margin-bottom: 5%;
         overflow: hidden;
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 116, 126, 1);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 116, 126, 1);
-        box-shadow: 10px 10px 5px 0px rgba(0, 116, 126, 1);
     }
     .uep-videos {
         width: 100%;
