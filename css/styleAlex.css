@@ -740,8 +740,8 @@ a {
 
 .ep-festivalsVogn {
     width: 70%;
-
-    filter: contrast(40%);
+    
+    border-radius: 25px;
 
 }
 
@@ -757,6 +757,8 @@ a {
     color: white;
 
     z-index: 1;
+    
+    display: none;
 }
 
 
@@ -1378,7 +1380,6 @@ a {
 
         z-index: 0;
 
-        filter: contrast(40%)
     }
 
     .ep-nextEvent1 {
@@ -1408,6 +1409,8 @@ a {
         font-size: 1.8vw;
 
         color: white;
+        
+        display: none;
     }
 
 
