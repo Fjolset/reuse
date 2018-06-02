@@ -700,10 +700,7 @@ footer {
 /* ----------------------------------EVENT---------------------------*/
 
 .ep-nextEvent {
-    width: 100%;
-
-    height: 200px;
-
+    width: 80%;
     background-color: transparent;
 }
 
@@ -745,7 +742,7 @@ p
 
 /* GALLERI */
 
-.ep-festivalsVogn {
+.ep-festivalsVogn2 {
     width: 70%;
     
     border-radius: 25px;
